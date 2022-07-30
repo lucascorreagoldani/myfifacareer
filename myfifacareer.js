@@ -71,10 +71,6 @@ function getAll() {
     //console.log(timeFilter[randomTEAM].TIME)
     //console.log(filterObjetive[randomOBJECTIVE].OBJETIVO_TITLE)
 
-    //console.log(randomSQUAD, SQUAD[randomSQUAD])
-    //console.log(randomTEAM, TEAM[randomTEAM])
-    //console.log(randomOBJECTIVE, OBJECTIVE[randomOBJECTIVE])
-
     console.log('O seu time selecionado foi o ' + timeFilter[randomTEAM].TIME + ' com o objetivo principal sendo: ' + objectiveFilter[randomOBJECTIVE].OBJETIVO_TITLE + ' e como sugestão utilizar a escalação: ' + randomSQUAD, SQUAD[randomSQUAD])
 
 }
