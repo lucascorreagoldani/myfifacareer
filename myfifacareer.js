@@ -36,16 +36,16 @@ function getAll() {
     // List of available teams
     var TEAM = [ 
     {
-        TIME: 'Grêmio', 
+        TEAM_NAME: 'Grêmio', 
         CONTINENT: 'SOUTH_AMERICA',
     },
     {
-        TIME: 'Internacional',
+        TEAM_NAME: 'Internacional',
         CONTINENT: 'SOUTH_AMERICA',
     },
     {
-        TIME: 'Real Madrid',
-        CONTINENT: 'Europa',
+        TEAM_NAME: 'Real Madrid',
+        CONTINENT: 'EUROPE',
     }
     ]
 
@@ -57,20 +57,21 @@ function getAll() {
     },
     {
         OBJETIVO_TITLE: 'Conquistar a Champions',
-        CONTINENT: 'Europa',
+        CONTINENT: 'EUROPE',
     }
     ]
 
-    const randomSQUAD = Math.floor(Math.random() * SQUAD.length)
-    const timeFilter = TEAM.filter(time => time.CONTINENT === 'SOUTH_AMERICA')
+    const teamFilter = TEAM.filter(team_name => team_name.CONTINENT === 'SOUTH_AMERICA')
     const objectiveFilter = OBJECTIVE.filter(objective => objective.CONTINENT === 'SOUTH_AMERICA')
-    const randomTEAM = Math.floor(Math.random() * timeFilter.length)
+
+    const randomSQUAD = Math.floor(Math.random() * SQUAD.length)
+    const randomTEAM = Math.floor(Math.random() * teamFilter.length)
     const randomOBJECTIVE = Math.floor(Math.random() * objectiveFilter.length)
 
 
-    //console.log(timeFilter[randomTEAM].TIME)
+    //console.log(teamFilter[randomTEAM].TIME)
     //console.log(filterObjetive[randomOBJECTIVE].OBJETIVO_TITLE)
 
-    console.log('O seu time selecionado foi o ' + timeFilter[randomTEAM].TIME + ' com o objetivo principal sendo: ' + objectiveFilter[randomOBJECTIVE].OBJETIVO_TITLE + ' e como sugestão utilizar a escalação: ' + randomSQUAD, SQUAD[randomSQUAD])
+    console.log('O seu time selecionado foi o ' + teamFilter[randomTEAM].TEAM_NAME + ' com o objetivo principal sendo: ' + objectiveFilter[randomOBJECTIVE].OBJETIVO_TITLE + ' e como sugestão utilizar a escalação: ' + randomSQUAD, SQUAD[randomSQUAD])
 
 }
