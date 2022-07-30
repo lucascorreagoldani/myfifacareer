@@ -1,4 +1,5 @@
 function getAll() {
+    // List of available squads
     var SQUAD = [
         '3.1.4.2',
         '3.4.1.2',
@@ -32,6 +33,7 @@ function getAll() {
         '5.4.1',
     ]
 
+    // List of available teams
     var TEAM = [ 
     {
         TIME: 'Grêmio', 
@@ -47,6 +49,7 @@ function getAll() {
     }
     ]
 
+    // List of available objective
     var OBJECTIVE = [ 
     {
         OBJETIVO_TITLE: 'Conquistar a Libertadores',
