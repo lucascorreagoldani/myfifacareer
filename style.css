@@ -25,3 +25,8 @@
     background: #b28e56;
     height: 6vh;
 }
+
+.button {
+    display: flex;
+    margin: 50px auto;
+}

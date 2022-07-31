@@ -46,7 +46,7 @@ function getAll() {
     {
         TEAM_NAME: 'Real Madrid',
         CONTINENT: 'EUROPE',
-    }
+    },
     ]
 
     // List of available objective
@@ -58,7 +58,7 @@ function getAll() {
     {
         OBJETIVO_TITLE: 'Conquistar a Champions',
         CONTINENT: 'EUROPE',
-    }
+    },
     ]
 
     const teamFilter = TEAM.filter(team_name => team_name.CONTINENT === 'SOUTH_AMERICA')
@@ -67,10 +67,6 @@ function getAll() {
     const randomSQUAD = Math.floor(Math.random() * SQUAD.length)
     const randomTEAM = Math.floor(Math.random() * teamFilter.length)
     const randomOBJECTIVE = Math.floor(Math.random() * objectiveFilter.length)
-
-
-    //console.log(teamFilter[randomTEAM].TIME)
-    //console.log(filterObjetive[randomOBJECTIVE].OBJETIVO_TITLE)
 
     alert('O seu time selecionado foi o ' + teamFilter[randomTEAM].TEAM_NAME + ' com o objetivo principal sendo: ' + objectiveFilter[randomOBJECTIVE].OBJETIVO_TITLE + ' e como sugestão utilizar a escalação: ' + randomSQUAD, SQUAD[randomSQUAD])
     console.log('O seu time selecionado foi o ' + teamFilter[randomTEAM].TEAM_NAME + ' com o objetivo principal sendo: ' + objectiveFilter[randomOBJECTIVE].OBJETIVO_TITLE + ' e como sugestão utilizar a escalação: ' + randomSQUAD, SQUAD[randomSQUAD])
