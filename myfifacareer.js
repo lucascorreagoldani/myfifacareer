@@ -69,7 +69,7 @@ function getAll() {
     const teamFilter = TEAM.filter(team_name => team_name.CONTINENT === 'SOUTH_AMERICA')
     const objectiveFilter = OBJECTIVE.filter(objective => objective.CONTINENT === 'SOUTH_AMERICA')
 
-    const randomSQUAD = Math.floor(Math.random() * SQUAD.length)
+    const randomSQUAD = SQUAD[Math.floor(Math.random() * SQUAD.length)]
     const randomTEAM = Math.floor(Math.random() * teamFilter.length)
     const randomOBJECTIVE = Math.floor(Math.random() * objectiveFilter.length)
 
